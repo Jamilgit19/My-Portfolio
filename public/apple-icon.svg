@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background for Apple -->
+  <rect width="180" height="180" rx="40" fill="url(#bgGradient)" />
+  <!-- Code brackets icon -->
+  <g transform="translate(45, 50)">
+    <!-- Left bracket -->
+    <path d="M34 10 L10 40 L34 70" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Right bracket -->
+    <path d="M56 10 L80 40 L56 70" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
