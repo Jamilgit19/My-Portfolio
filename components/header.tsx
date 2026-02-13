@@ -49,8 +49,8 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="group flex items-center gap-3">
-            <div className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-primary/50 bg-primary/10 font-mono text-sm text-primary transition-all duration-400 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/25 group-hover:rotate-[360deg]">
+          <Link href="/" className="group flex items-center gap-3 touch-manipulation">
+            <div className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-primary/50 bg-primary/10 font-mono text-sm text-primary transition-all duration-400 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/25 group-hover:rotate-[360deg] group-active:border-primary group-active:bg-primary group-active:text-primary-foreground group-active:scale-110 group-active:rotate-[360deg]">
               <Code2 className="h-5 w-5 transition-all duration-500" />
             </div>
             <span className="font-mono text-sm tracking-tight">
@@ -204,7 +204,7 @@ export function Header() {
                   <link.icon className="h-4 w-4" />
                 </a>
               ))}
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50 relative">
                 <ThemeChanger />
               </div>
               <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50">

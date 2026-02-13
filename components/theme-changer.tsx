@@ -127,11 +127,12 @@ export function ThemeChanger() {
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "group relative flex h-9 w-9 items-center justify-center rounded-lg",
-          "text-muted-foreground transition-all duration-300",
-          "hover:text-primary hover:bg-primary/10",
+          "text-muted-foreground transition-all duration-300 touch-manipulation",
+          "hover:text-primary hover:bg-primary/10 active:text-primary active:bg-primary/20",
           isOpen && "bg-primary/10 text-primary",
         )}
         aria-label="Change color theme"
+        type="button"
       >
         <Palette className="h-4 w-4" />
         <span
@@ -152,7 +153,7 @@ export function ThemeChanger() {
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className={cn(
-              "absolute right-0 top-12 z-50",
+              "fixed md:absolute right-4 md:right-0 top-32 md:top-12 z-50",
               "w-48 rounded-lg border border-border",
               "bg-card/95 backdrop-blur-xl shadow-xl",
               "p-3 animate-fade-in",
@@ -166,10 +167,11 @@ export function ThemeChanger() {
                   onClick={() => handleThemeChange(key as ThemeColor)}
                   className={cn(
                     "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg",
-                    "transition-all duration-200",
-                    "hover:bg-secondary/80",
+                    "transition-all duration-200 touch-manipulation",
+                    "hover:bg-secondary/80 active:bg-secondary",
                     currentTheme === key ? "bg-primary/10 border border-primary/50" : "border border-transparent",
                   )}
+                  type="button"
                 >
                   <div
                     className={cn(
