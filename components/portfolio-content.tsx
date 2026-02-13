@@ -455,7 +455,7 @@ export function PortfolioContent() {
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] touch-manipulation shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
                 >
                   <Send className="w-4 h-4" />
                   Send Message

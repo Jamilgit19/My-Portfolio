@@ -126,9 +126,22 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    -webkit-tap-highlight-color: transparent;
   }
   body {
     @apply bg-background text-foreground;
+    touch-action: manipulation;
+  }
+  
+  /* Better touch handling for buttons and links on mobile */
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  /* Disable double-tap zoom on buttons */
+  button {
+    touch-action: manipulation;
   }
 }
 

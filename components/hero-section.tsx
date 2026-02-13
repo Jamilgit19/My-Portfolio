@@ -137,7 +137,7 @@ export function HeroSection() {
             <div className="flex flex-wrap gap-2.5 sm:gap-3 animate-fade-in-up stagger-4">
               <a
                 href="#contact"
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg border border-primary bg-primary px-5 py-2 font-semibold text-sm text-primary-foreground transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50"
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg border border-primary bg-primary px-5 py-2 font-semibold text-sm text-primary-foreground transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 touch-manipulation"
               >
                 <Mail className="h-4 w-4" />
                 <span>Get In Touch</span>
@@ -145,7 +145,7 @@ export function HeroSection() {
               <a
                 href="/resume.pdf"
                 download="MD_Jamil_Resume.pdf"
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg border border-primary bg-primary/10 px-5 py-2 font-semibold text-sm text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105 active:scale-[0.98] shadow-md hover:shadow-lg hover:shadow-primary/30"
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg border border-primary bg-primary/10 px-5 py-2 font-semibold text-sm text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105 active:scale-[0.98] shadow-md hover:shadow-lg hover:shadow-primary/30 touch-manipulation"
               >
                 <Download className="h-4 w-4" />
                 <span>Resume</span>
@@ -154,7 +154,7 @@ export function HeroSection() {
                 href="https://github.com/Jamilgit19"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2 font-semibold text-sm text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10 active:scale-[0.98] hover:shadow-md"
+                className="group inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2 font-semibold text-sm text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10 active:scale-[0.98] hover:shadow-md touch-manipulation"
               >
                 <Github className="h-4 w-4" />
                 <span>GitHub</span>
@@ -163,7 +163,7 @@ export function HeroSection() {
                 href="https://www.linkedin.com/in/md-jamil-8266a6289/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2 font-semibold text-sm text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10 active:scale-[0.98]"
+                className="group inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2 font-semibold text-sm text-foreground transition-all duration-300 hover:border-primary hover:bg-primary/10 active:scale-[0.98] touch-manipulation"
               >
                 <Linkedin className="h-4 w-4" />
                 <span>LinkedIn</span>

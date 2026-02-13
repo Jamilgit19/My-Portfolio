@@ -142,8 +142,9 @@ export function Header() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/50 md:hidden transition-colors hover:bg-secondary"
+              className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/50 md:hidden transition-colors hover:bg-secondary active:bg-primary/20 touch-manipulation"
               aria-label="Toggle menu"
+              type="button"
             >
               <div className="flex flex-col gap-1.5 w-5">
                 <span
@@ -172,8 +173,8 @@ export function Header() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            " transition-all duration-400 md:hidden bg-background",
-            isMobileMenuOpen ? "max-h-96 opacity-100 pt-4" : "max-h-0 opacity-0",
+            "transition-all duration-400 md:hidden bg-background overflow-hidden",
+            isMobileMenuOpen ? "max-h-96 opacity-100 pt-4 pointer-events-auto" : "max-h-0 opacity-0 pointer-events-none",
           )}
         >
           <div className="flex flex-col gap-1 border-t border-border/50 pt-4">
@@ -182,7 +183,7 @@ export function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-3 rounded-lg px-4 py-3.5 font-mono text-sm uppercase tracking-widest text-muted-foreground transition-all duration-200 active:bg-secondary hover:text-foreground hover:bg-secondary/50"
+                className="flex items-center gap-3 rounded-lg px-4 py-3.5 font-mono text-sm uppercase tracking-widest text-muted-foreground transition-all duration-200 active:bg-primary/20 active:text-primary touch-manipulation hover:text-foreground hover:bg-secondary/50"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <span className="text-primary">{">"}</span>
@@ -198,7 +199,7 @@ export function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-colors active:bg-secondary hover:border-primary/50 hover:text-primary hover:bg-primary/10"
+                  className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-colors active:bg-primary/20 active:text-primary touch-manipulation hover:border-primary/50 hover:text-primary hover:bg-primary/10"
                 >
                   <link.icon className="h-4 w-4" />
                 </a>
